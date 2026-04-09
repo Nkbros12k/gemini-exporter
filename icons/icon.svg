@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4"/>
+      <stop offset="100%" style="stop-color:#1a73e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="url(#bg)"/>
+  <g transform="translate(24, 20)">
+    <!-- Document shape -->
+    <path d="M10 0 H60 L80 20 V88 H10 Z" fill="white" opacity="0.95"/>
+    <path d="M60 0 L60 20 H80 Z" fill="white" opacity="0.7"/>
+    <!-- Text lines -->
+    <rect x="20" y="32" width="40" height="4" rx="2" fill="#4285F4" opacity="0.6"/>
+    <rect x="20" y="42" width="50" height="4" rx="2" fill="#4285F4" opacity="0.4"/>
+    <rect x="20" y="52" width="35" height="4" rx="2" fill="#4285F4" opacity="0.6"/>
+    <rect x="20" y="62" width="45" height="4" rx="2" fill="#4285F4" opacity="0.4"/>
+    <!-- Export arrow -->
+    <g transform="translate(50, 55)">
+      <circle cx="15" cy="15" r="18" fill="#34A853"/>
+      <path d="M15 6 L15 22 M8 14 L15 6 L22 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+</svg>
