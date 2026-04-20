@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Chat Exporter",
+  "version": "1.1.0",
+  "description": "Export your Google Gemini conversations to JSON, CSV, TXT, Markdown, or PDF with one click.",
+  "permissions": ["activeTab", "debugger", "scripting", "storage"],
+  "host_permissions": ["https://gemini.google.com/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; style-src 'self';"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content/scraper.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

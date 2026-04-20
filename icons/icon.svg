@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 144 144">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7BF7"/>
+      <stop offset="100%" style="stop-color:#4255E0"/>
+    </linearGradient>
+  </defs>
+  <!-- Circular G shape -->
+  <path d="
+    M 64 12
+    A 52 52 0 1 0 100 88
+    L 100 64
+    L 68 64
+  " fill="none" stroke="url(#g)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow pointing up-right from the top -->
+  <path d="
+    M 80 12
+    L 100 12
+    L 100 32
+  " fill="none" stroke="url(#g)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Connect the G opening to the arrow -->
+  <line x1="64" y1="12" x2="100" y2="12" stroke="url(#g)" stroke-width="11" stroke-linecap="round"/>
+</svg>
